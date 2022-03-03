@@ -5,6 +5,8 @@ import Content from './content';
 import { loadWeb3 , loadAccount, loadToken, loadExchange} from '../store/interactions';
 import { connect } from 'react-redux';
 import Web3 from "web3/dist/web3.min";
+import ClipLoader from "react-spinners/ClipLoader";
+
 
 import { contractsLoadedSelector } from '../store/selectors';
 
@@ -41,7 +43,7 @@ class App extends Component {
     return (
       <div>
         <Navbar/>
-        {this.props.contractLoaded ? <Content/> : <div className='content'></div>}
+        {this.props.contractLoaded ? <Content/> : <ClipLoader/>}
       </div>
     );
   }

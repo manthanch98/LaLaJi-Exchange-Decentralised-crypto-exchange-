@@ -26,10 +26,11 @@ class Content extends Component{
             <div className="content">
           <div className="vertical-split">
             <Balance/>
+
             <NewOrder/>
           </div>
           <div className="vertical">
-            <OrderBook></OrderBook>
+            <OrderBook/>
           </div>
           <div className="vertical">
 

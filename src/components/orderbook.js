@@ -11,7 +11,8 @@ import {
     accountSelector,
     orderFillingSelector
   } from '../store/selectors'
-import { orderFilling } from "../store/actions";
+import ClipLoader from "react-spinners/ClipLoader";
+
 
 const showOrderBook= (props) =>{
     const {orderBook}= props
@@ -62,7 +63,7 @@ class OrderBook extends Component{
               </div>
               <div className="card-body order-book">
                   <table className="table table-dark table-sm small">
-                    {this.props.showOrderBook ? showOrderBook(this.props):<tbody></tbody>}
+                    {this.props.showOrderBook ? showOrderBook(this.props):<ClipLoader/>}
                   </table>
               </div>
             </div>

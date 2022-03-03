@@ -1,6 +1,8 @@
 import React,{ Component } from "react";
 import { connect } from "react-redux";
 import { filledOrdersLoadedSelector, filledOrdersSelector } from "../store/selectors";
+import ClipLoader from "react-spinners/ClipLoader";
+
 
 
 
@@ -41,7 +43,7 @@ class Trades extends Component{
                             <th>Udhari/ETH</th>      
                         </tr>
                     </thead>
-                    {this.props.filledOrdersLoaded ? showFilledOrders(this.props.filledOrders):<tbody></tbody>}
+                    {this.props.filledOrdersLoaded ? showFilledOrders(this.props.filledOrders):<ClipLoader/>}
                 </table>
               </div>
             </div>
