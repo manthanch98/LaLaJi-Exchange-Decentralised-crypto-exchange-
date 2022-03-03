@@ -111,7 +111,7 @@ const showForm= (props) =>{
             </form>
             
             </Tab>
-            <Tab eventKey="withdraw" title="Withdraw">
+            <Tab eventKey="withdraw" title="Withdraw" className="bg-dark">
             <table className='table table-dark table-sm small'>
                     <thead>
                         <tr>

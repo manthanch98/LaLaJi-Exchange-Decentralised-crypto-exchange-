@@ -136,11 +136,64 @@ export function tokenDepositAmountChanged(amount) {
       type: 'TOKEN_DEPOSIT_AMOUNT_CHANGED',
       amount
     }
-  }
+}
   
-  export function tokenWithdrawAmountChanged(amount) {
+export function tokenWithdrawAmountChanged(amount) {
     return {
       type: 'TOKEN_WITHDRAW_AMOUNT_CHANGED',
       amount
     }
-  }
+}
+/////////////////////////////////////////////////
+//BUY ORDER
+export function buyOrderAmountChanged(amount) {
+    return {
+      type: 'BUY_ORDER_AMOUNT_CHANGED',
+      amount
+    }
+}
+
+export function buyOrderPriceChanged(price) {
+    return {
+      type: 'BUY_ORDER_PRICE_CHANGED',
+      price
+    }
+}
+
+export function buyOrderMaking(order){
+    return{
+        type: 'BUY_ORDER_MAKING',
+        order
+    }
+}
+
+// Generic Order
+export function orderMade(order) {
+    return {
+      type: 'ORDER_MADE',
+      order
+    }
+}
+
+//////////////////////////////////////////////
+//SELL ORDER
+export function sellOrderAmountChanged(amount) {
+    return {
+      type: 'SELL_ORDER_AMOUNT_CHANGED',
+      amount
+    }
+}
+
+export function sellOrderPriceChanged(price) {
+    return {
+      type: 'SELL_ORDER_PRICE_CHANGED',
+      price
+    }
+}
+
+export function sellOrderMaking(order){
+    return{
+        type: 'SELL_ORDER_MAKING',
+        order
+    }
+}
